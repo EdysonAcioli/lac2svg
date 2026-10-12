@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="84mm" height="83.015mm" viewBox="18 18.4925 84 83.015">
+  <title>Gear Flower Sample</title>
+  <path id="obj-1" inkscape:label="Gear outline" d="M 100 60 L 99.5075 66.2574 L 88.5317 69.2705 L 86.7302 73.6197 L 92.3607 83.5114 L 88.2843 88.2843 L 77.6336 84.2705 L 73.6197 86.7302 L 72.3607 98.0423 L 66.2574 99.5075 L 60 90 L 55.307 89.6307 L 47.6393 98.0423 L 41.8404 95.6403 L 42.3664 84.2705 L 38.7868 81.2132 L 27.6393 83.5114 L 24.3597 78.1596 L 31.4683 69.2705 L 30.3693 64.693 L 20 60 L 20.4925 53.7426 L 31.4683 50.7295 L 33.2698 46.3803 L 27.6393 36.4886 L 31.7157 31.7157 L 42.3664 35.7295 L 46.3803 33.2698 L 47.6393 21.9577 L 53.7426 20.4925 L 60 30 L 64.693 30.3693 L 72.3607 21.9577 L 78.1596 24.3597 L 77.6336 35.7295 L 81.2132 38.7868 L 92.3607 36.4886 L 95.6403 41.8404 L 88.5317 50.7295 L 89.6307 55.307 Z" style="fill:none;stroke:#f44336;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" vector-effect="non-scaling-stroke" data-process="LaserLineCut"/>
+  <path id="obj-2" inkscape:label="Flower engrave" d="M 72 60 C 82.6389 68.2638 78.4761 75.4739 89.4449 77 C 64.1627 83.7378 55.8373 83.7378 60 94 C 41.5239 75.4739 37.3611 68.2638 30.5551 77 C 37.3611 51.7362 41.5239 44.5261 30.5551 43 C 55.8373 36.2622 64.1627 36.2622 60 26 C 78.4761 44.5261 82.6389 51.7362 89.4449 43 Z" style="fill:none;stroke:#0304fd;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel" vector-effect="non-scaling-stroke" data-process="LaserLineEngrave"/>
+  <g id="obj-10" inkscape:label="Hex group">
+    <path id="obj-3" inkscape:label="Hex fill" d="M 67.99982 59.9999 L 64 66.928 L 56.00018 66.9281 L 52.00018 60.0001 L 56 53.072 L 63.99982 53.0719 Z" style="fill:#0304fd;stroke:none;fill-rule:evenodd" vector-effect="non-scaling-stroke" data-process="LaserFillEngrave"/>
+  </g>
+</svg>
