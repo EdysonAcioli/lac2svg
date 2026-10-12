@@ -28,7 +28,9 @@ the **exact same geometry** Bambu Studio exports — verified path-by-path
 against the Suite's own SVG export: **34/34 paths identical, max deviation
 0.0004 mm**.
 
-| Design canvas (`--layout design`) | Making plate (`--layout plate`) |
+The same `.lac` project converted with both layouts — the bundled example [`examples/gear-flower.lac`](examples/gear-flower.lac) (gear outline to cut, flower to line-engrave, hexagon to fill-engrave):
+
+| `--layout design` — objects as arranged on the 2D canvas in Bambu Studio | `--layout plate` — objects re-arranged on the making plate, as they will be cut |
 |:---:|:---:|
 | ![Design layout example](docs/img/example-design.png) | ![Plate layout example](docs/img/example-plate.png) |
 
@@ -37,7 +39,7 @@ against the Suite's own SVG export: **34/34 paths identical, max deviation
 ## ✨ Features
 
 - 🎯 **Pixel-perfect geometry** — matches Bambu Studio's own SVG export (verified to 0.0004 mm)
-- 🗂 **Both layouts** — the 2D design canvas *and* the auto-arranged making plate
+- 🗂 **Both layouts** — export the 2D design canvas *or* the auto-arranged making plate
 - 🧠 **Full scene graph** — nested groups, transforms (rotate/scale/translate) baked into absolute coordinates
 - 🎨 **Process-aware styling** — cuts get outlines, fill engravings get fills; each path carries `data-process` (`LaserLineCut`, `LaserLineEngrave`, `LaserFillEngrave`)
 - 🖊 **Studio-identical strokes** — 1 px non-scaling stroke, square caps, bevel joins, exactly like the Suite renders
@@ -55,7 +57,7 @@ python lac2svg.py project.lac
 # Explicit output file
 python lac2svg.py project.lac output.svg
 
-# Making-plate arrangement (as it will be cut)
+# Making-plate arrangement (auto-arranged, as it will be cut)
 python lac2svg.py project.lac output.svg --layout plate
 
 # Stroke width in mm (default 0 = Studio look: constant 1px on screen)
@@ -69,7 +71,7 @@ python lac2svg.py project.lac output.svg --margin 5
 |---|---|---|
 | `input` | — | `.lac` file (required) |
 | `output` | `<input>.svg` | Output path; multi-canvas projects get `_canvas1.svg`, `_canvas2.svg`, … suffixes |
-| `--layout` | `design` | `design` = 2D canvas arrangement · `plate` = making-plate arrangement from project settings |
+| `--layout` | `design` | Which arrangement to export: `design` = the 2D canvas as seen in Bambu Studio · `plate` = the making plate (auto-arranged for cutting) |
 | `--stroke-width` | `0` | Stroke width in mm. `0` = Bambu Studio look (1 px constant on screen, `vector-effect="non-scaling-stroke"`) |
 | `--margin` | `2` | Extra space around the artwork in the `viewBox`, in mm |
 
